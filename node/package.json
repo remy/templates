@@ -1,0 +1,16 @@
+{
+  "name": "sample-project",
+  "main": "lib/index.js",
+  "private": true,
+  "scripts": {
+    "style": "jscs -v lib/*.js",
+    "test": "for FILE in test/*.test.js; do echo $FILE; node $FILE | tap-spec; if [ $? -ne 0 ]; then exit 1; fi; done",
+    "watch": "nodemon -q -x 'npm test'"
+  },
+  "devDependencies": {
+    "jscs": "^2.1.0",
+    "nodemon": "^1.4.1",
+    "tap-spec": "^2.2.2",
+    "tape": "^4.2.0"
+  }
+}
