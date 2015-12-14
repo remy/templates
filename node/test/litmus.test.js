@@ -17,5 +17,6 @@ test('litmus', function (assert) {
 // remove this test - it just shows that tap spec is working as we want
 test('failure - should be removed', function (assert) {
   assert.plan(1);
+  assert.ok('passed');
   throw new Error('intentially bailing to ensure tap-spec does not swallow');
 });

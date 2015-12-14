@@ -4,5 +4,6 @@ This is a sample project that includes working tests. Once cloned, inside the pr
 
 ```bash
 npm test
+npm run coverage # to see code coverage
 npm run watch # to continiously watch and test
 ```
