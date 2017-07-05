@@ -5,7 +5,7 @@ module.exports = (error, req, res, next) => { // jshint ignore:line
   let message = null;
   let n;
 
-  console.log('error', error)
+  console.log('error', error);
 
   if (typeof error === 'number') {
     n = error;
