@@ -1,5 +1,6 @@
 const codes = require('http-status-codes');
 
+// NOTE this only responds in JSON format, should really update to handle both
 module.exports = (error, req, res, next) => { // jshint ignore:line
   let message = null;
   let n;
@@ -43,4 +44,4 @@ module.exports = (error, req, res, next) => { // jshint ignore:line
   console.error(error.stack || msg);
 
   res.status(status).jsonp(e);
-}
+};
